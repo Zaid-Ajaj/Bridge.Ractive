@@ -1,0 +1,19 @@
+﻿.todo-item { 
+	margin: 5px;
+	font-size: 18px;
+}
+
+
+.complete {
+	margin: 5px;
+	text-decoration: line-through;
+	color: lightgreen;
+}
+
+.incomplete {
+	margin: 5px;
+}
+
+.todo-app {
+	padding:20px;
+}

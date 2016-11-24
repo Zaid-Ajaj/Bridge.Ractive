@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Bridge Bridge.Ractive.Example</title>
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="../css/main.css" rel="stylesheet" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/redux/3.6.0/redux.min.js"></script>
+    <script src='http://cdn.ractivejs.org/latest/ractive.min.js'></script>
+
+    <script src="../js/bridge.min.js"></script>
+    <script src="../js/bridge.javascript.js"></script>
+    <script src="../js/bridge.ractive.js"></script>
+    <script src="../js/bridge.redux.js"></script>
+    <script src="../js/bridge.ractive.example.js"></script>
+</head>
+<body>
+
+    <script id="app-template" type="text/template">
+        <div class="todo-app">
+            <h1>Ractive and Redux in C#</h1>
+
+            <ul>
+                {{#each filter(visibility, todos) }}
+            <li>
+                <div class="todo-item">
+                    <div class="{{ isCompleted ? 'complete' : 'incomplete' }}">
+                        {{ description }}
+                    </div>
+
+                    <button class="btn btn-primary" on-click="@this.fire('toggleTodo', id)">
+                        Toggle
+                    </button>
+
+                    <button class="btn btn-danger" on-click="@this.fire('deleteTodo', id)">
+                        Delete
+                    </button>
+                </div>
+            </li>
+                {{/each}}
+            </ul>
+            <hr />
+            <h3>Add todo item</h3>
+            <input id="txtAddTodo" placeholder="todo description" style="width: 175px; margin: 5px;" class="form-control" />
+            <button class="btn btn-success" on-click="addTodo" style="margin-left: 5px;">
+                Add
+            </button>
+            <hr />
+            <h3>Visibility</h3>
+            <div>
+                <span>Show</span>
+                <button class="btn btn-{{ visibility === 'all' ? 'primary' : 'default' }}" on-click="showAll">
+                    All
+                </button>
+                <button class="btn btn-{{ visibility === 'completed' ? 'primary' : 'default' }}" on-click="showComplete">
+                    Finished
+                </button>
+                <button class="btn btn-{{ visibility === 'yetToComplete' ? 'primary' : 'default' }}" on-click="showIncomplete">
+                    Not finished yet
+                </button>
+            </div>
+        </div>
+
+    </script>
+
+    <div id="app">
+        <h1>Loading...</h1>
+    </div>
+</body>
+</html>
