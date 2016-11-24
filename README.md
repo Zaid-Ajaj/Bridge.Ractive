@@ -30,3 +30,5 @@ var ractive = new Ractive(new RactiveOptions
 ```
 
 The Bridge.Ractive.Example demonstrates a complete todo app with [Brige.Redux](https://github.com/Zaid-Ajaj/Bridge.Redux) as the state container
+
+![screenshot](https://cloud.githubusercontent.com/assets/13316248/20609670/d8ea6610-b28f-11e6-8818-ebbbe7740df3.png)
