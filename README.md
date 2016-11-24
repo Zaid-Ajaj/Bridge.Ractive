@@ -29,4 +29,4 @@ var ractive = new Ractive(new RactiveOptions
 });
 ```
 
-in your html make sure to have a script tag refencing [Ractive.js](http://www.ractivejs.org/). 
+The Bridge.Ractive.Example demonstrates a complete todo app with [Brige.Redux](https://github.com/Zaid-Ajaj/Bridge.Redux) as the state container
