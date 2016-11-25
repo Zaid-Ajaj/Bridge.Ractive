@@ -2,7 +2,7 @@
 This library provides means to works with [Ractive.js](http://www.ractivejs.org/) with C# in your Bridge.NET project.
 
 ### Installation
-The easier way to use Ractive in your Bridge.NET project is to copy and paste the contents of [Generated.Ractive.cs](https://github.com/Zaid-Ajaj/Bridge.Ractive/blob/master/Bridge.Ractive/Generated.Ractive.cs) file in your project. This way there are no binary dependencies and you can tweak it however you want.
+The easiest way to use Ractive in your Bridge.NET project is to copy and paste the contents of [Generated.Ractive.cs](https://github.com/Zaid-Ajaj/Bridge.Ractive/blob/master/Bridge.Ractive/Generated.Ractive.cs) file in your project. This way there are no binary dependencies and you can tweak it however you want.
 
 Another way to install is from Nuget
 ```Install-Package Bridge.Ractive```
