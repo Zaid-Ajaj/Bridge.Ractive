@@ -46,6 +46,7 @@
   <ItemGroup>
     <Compile Include="AnimationOptions.cs" />
     <Compile Include="Events\ClickEventArgs.cs" />
+    <Compile Include="Generated.Ractive.cs" />
     <Compile Include="ICancellable.cs" />
     <Compile Include="ObserveOptions.cs" />
     <Compile Include="ParsedTemplate.cs" />
@@ -58,6 +59,7 @@
     <Compile Include="SanitizeOptions.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Generator.fsx" />
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
