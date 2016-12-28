@@ -15,13 +15,14 @@ namespace Bridge.Ractive
 
     }
 
+    [External]
     public static class Exts
     {
         [Template("new {0}({1})")]
-        public static extern RactiveComponent Initiaze(this RactiveComponent component, RactiveOptions options);
+        public static extern RactiveComponent Initialize(this RactiveComponent component, RactiveOptions options);
 
         [Template("new {0}({1})")]
-        public static extern RactiveComponent Initiaze(this RactiveComponent component, object options);
+        public static extern RactiveComponent Initialize(this RactiveComponent component, object options);
     }
 
 

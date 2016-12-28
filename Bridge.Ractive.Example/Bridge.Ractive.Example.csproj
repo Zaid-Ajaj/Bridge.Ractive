@@ -69,8 +69,13 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\css\bootstrap-3.3.7.css" />
     <Content Include="app\css\main.css" />
     <Content Include="app\html\index.html" />
+    <Content Include="app\libs\Ractive-0.8.1.js" />
+    <Content Include="app\libs\Ractive-0.8.1.min.js" />
+    <Content Include="app\libs\Redux-3.6.0.js" />
+    <Content Include="app\libs\Redux-3.6.0.min.js" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Bridge.Ractive\Bridge.Ractive.csproj">

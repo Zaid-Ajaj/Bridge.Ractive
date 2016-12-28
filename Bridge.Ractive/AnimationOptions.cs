@@ -3,6 +3,7 @@
 namespace Bridge.Ractive
 {
     [ObjectLiteral]
+    [External]
     public class AnimationOptions
     {
         /// <summary>
@@ -27,6 +28,7 @@ namespace Bridge.Ractive
     }
 
     [Enum(Emit.StringName)]
+    [External]
     public enum Easing
     {
         Linear, 
